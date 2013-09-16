@@ -1,0 +1,36 @@
+</p>
+</div>
+<div onclick="runAccordion(3);">
+<div class="AccordionTitle" onselectstart="return false;" style="background-image:url(http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/icons/shipping2.png);background-repeat: no-repeat; background-position: left;">
+<p>
+Shipping
+</p>
+</div>
+</div>
+<div id="Accordion3Content" class="AccordionContent">
+<p style="font-size: 13px;">All deliveries are subject to stock availability and authorisation of your payment.<br>
+We aim to deliver your item within three working days using Standard Delivery. There are a small number of postcodes, usually in remote rural areas, where we cannot guarantee delivery within our usual timescale, however we will notify you as soon as possible.
+Delivery will only be made to your billing address. We deliver to most postal areas in the UK. We reserve the right not to deliver orders if we believe the address is not secure, for example, to a communal postal address or PO Box. If this affects your order, we will notify you as soon as possible.
+A signature will be required on receipt of your goods being delivered. If you are not around to accept your parcel a calling card will be posted through your door to let you know a delivery has been attempted.<br>
+Please note that orders are only dispatched Monday to Friday.&nbsp; Please note that orders are not dispatched on public holidays.<br>
+</p>
+</div>
+</div><p ng-bind-html-unsafe="description" style="height:505px"></p>
+<div id="box">
+<div id="imagecontainer">
+<img id="myimage" src="http://infashiononline.com/media/catalog/product/cache/1/image/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_angle.jpg">
+<div id="thumbscontainer"><a href="#" onmouseover="showimg(0);return false;" onclick="showimg(0);return false;"><img src="http://infashiononline.com/media/catalog/product/cache/1/image/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_angle.jpg"></a><a href="#" onmouseover="showimg(1);return false;" onclick="showimg(1);return false;"><img src="http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_side.jpg"></a><a href="#" onmouseover="showimg(2);return false;" onclick="showimg(2);return false;"><img src="http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_side2.jpg"></a><a href="#" onmouseover="showimg(3);return false;" onclick="showimg(3);return false;"><img src="http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_zoom.jpg"></a><a href="#" onmouseover="showimg(4);return false;" onclick="showimg(4);return false;"><img src="http://infashiononline.com/media/catalog/product/cache/1/image/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_angle.jpg"></a><a href="#" onmouseover="showimg(5);return false;" onclick="showimg(5);return false;"><img src="http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_side.jpg"></a><a href="#" onmouseover="showimg(6);return false;" onclick="showimg(6);return false;"><img src="http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_side2.jpg"></a><a href="#" onmouseover="showimg(7);return false;" onclick="showimg(7);return false;"><img src="http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_zoom.jpg"></a></div>
+</div>
+<script language="Javascript" type="text/javascript">
+<!--
+showimg(0);
+var html= "";
+for (var i=0;i<imglist.length;i++)
+{html = html + "<a href = '#' onmouseover = 'showimg(" + i + ");return false;' onclick = 'showimg(" + i + ");return false;'><img src='" + imglist[i] + "' /></a>";}
+document.getElementById("thumbscontainer").innerHTML= html;
+//-->
+</script>
+</div> <!-- maincontent -->
+</div> <!-- outer container -->
+</div> <!-- superoter -->
+</div></div>

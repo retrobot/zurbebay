@@ -1,0 +1,11 @@
+</p>
+</div>
+<div onclick="runAccordion(2);">
+<div class="AccordionTitle" onselectstart="return false;" style="background-image:url(http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/icons/payment2.png);background-repeat: no-repeat; background-position: left;">
+<p>
+Payment
+</p>
+</div>
+</div>
+<div id="Accordion2Content" class="AccordionContent">
+<p>

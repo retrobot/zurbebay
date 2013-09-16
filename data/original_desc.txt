@@ -1,0 +1,996 @@
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>IN.FO Infashion Online</title>
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Inder" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Terminal+Dosis" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet" type="text/css">
+<link href="http://www.carltonlondonwholesale.com/infob/eb_store/no_js/css/dropdownmenu/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css">
+<link href="http://www.carltonlondonwholesale.com/infob/eb_store/no_js/css/dropdownmenu/dropdown/themes/adobe.com/default.advanced.css" media="screen" rel="stylesheet" type="text/css">
+<link href="http://www.carltonlondonwholesale.com/infob/eb_store/no_js/css/dropdownmenu/horizontal-centering.css" media="all" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+background: url("http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/info_bg3.png");
+}
+#content-left,#img-container,#sidebar,#logo,#banner1,#bottompart,#animbanners,#dropppmenu,#extra,#slidgal,#superouter{
+float: center;
+}
+#dropppmenu {
+position:relative;
+z-index: 3000;
+margin-top: 55px;
+padding-left: 15px;
+padding-right: 15px;
+margin-bottom: 25px;
+}
+#outer-container {
+width: 960px;
+background-image: url(http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/border_sides_black.png);
+margin:auto;
+overflow:hidden;
+position: relative;
+}
+#superouter {
+}
+#header,#footer,#img-container,#content-left,#maincontent,#banner1,#bottompart,#animbanners,#dropppmenu,#extra,#slidgal,#banerimago {
+width: 960px;
+}
+#animinside {
+width: 900px;
+float: center;
+margin-left: 30px;
+background-image: url(http://alohape.strefa.pl/infashion/template/images/strippedbg160.gif);
+}
+#maincontent {
+height: 730px;
+margin-top: 60px;
+float: left;
+}
+#animbanners {
+width: 880px;
+margin: 0px 40px 10px 40px;
+padding-top: 5px;
+padding-bottom:5px;
+height: 260px;
+background-image: url(http://alohape.strefa.pl/infashion/template/images/strippedbg160.gif);
+}
+#banner1 {
+height: 450px;
+}
+#banerimago{
+height: 250px;
+width: 960px;
+padding-top: 50px;
+padding-left: 75px;
+margin-top: 60px;
+ float: left;
+}
+#banner1 div{
+position:relative
+}
+#banner1 div>img{
+opacity:0;
+position:absolute;
+margin-left: 200px;
+top:0;
+left:200;
+-webkit-transition:opacity 1s linear;
+-moz-transition:opacity 1s linear;
+-ms-transition:opacity 1s linear;
+-o-transition:opacity 1s linear;
+transition:opacity 1s linear
+}
+#slidgal {
+height: 600px;
+}
+#header, { height: 24px; }
+#logo {
+width: 960px;
+height: 213px;
+margin: 0px 0 0 0px;
+}
+#footer, { height: 24px; }
+#flogo {
+width: 960px;
+height: 24px;
+margin: 0px 0 0 0px;
+float:center;
+}
+#header-right {
+float: right;
+width: 355px;
+margin: -5px 45px 0 0;
+color: #fff;
+font-weight: bold;
+font-family: 'Inder', sans-serif;
+font-size: large;
+text-align: right;
+}
+/* NEEEDED????????????????????????? */
+#img-container {
+width: 960px;
+margin: 0;
+padding:0;
+height: 200px;
+border-top: 0px solid #000;
+border-bottom: 0px solid #000;
+}
+/* GALLERIA STYLE SHEET */
+/* VERTICAL SLIDER TABS */
+.vert-icon-shoeinfo, .vert-icon-payment, .vert-icon-shipping {
+background-repeat: no-repeat; background-position: center;
+}
+.vert-icon-shoeinfo{
+background-image:url(http://alohape.strefa.pl/infashion/template/images/icons/Rysunek17.png);
+}
+.vert-icon-payment{
+background-image:url(http://alohape.strefa.pl/infashion/template/images/icons/Rysunek16.png);
+}
+.vert-icon-shipping{
+background-image:url(http://alohape.strefa.pl/infashion/template/images/icons/Rysunek15.png);
+}
+.sti-icon-care{
+background-image:url(http://alohape.strefa.pl/infashion/template/AnimatedTextIcon/images/info_package3.png);
+}
+.sti-icon-alternative{
+background-image:url(http://alohape.strefa.pl/infashion/template/images/icons/gift_white_small.png);
+}
+.sti-icon-family{
+background-image:url(http://alohape.strefa.pl/infashion/template/images/icons/heartYOU.png);
+}
+.sti-icon-info{
+background-image:url(http://alohape.strefa.pl/infashion/template/AnimatedTextIcon/images/info.png);
+}
+.sti-icon-technology{
+background-image:url(http://alohape.strefa.pl/infashion/template/AnimatedTextIcon/images/technology.png);
+}
+img {
+border-style: none;
+}
+/* Fades in the slideshow. Hides the initial animation on the li tag. Ooops!! */
+@-webkit-keyframes fadeIn {
+0% {
+opacity: 0;
+}
+50% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+ul#slider{
+-webkit-border-radius: 10px;
+margin: 0px;
+padding: 0px;
+list-style: none;
+position: relative;
+width: 470px;
+height: 400px;
+overflow: hidden;
+}
+ul#thumb {
+overflow: none;
+margin: 0px 0px 0px 0px;
+padding: 0px;
+list-style: none;
+position: relative;
+background: #000;
+overflow: auto;
+width: 700px;
+}
+ul#thumb a {
+-webkit-transition: opacity .2s ease-in-out;
+border: 1px solid #979797;
+width: 35px;
+height: 35px;
+display: block;
+overflow: hidden;
+float: left;
+margin: 10px 0px 0px 10px;
+opacity: 0.75;
+}
+ul#thumb a:hover {
+opacity: 1;
+}
+ul#slider li {
+width: 200px;
+height: 100px;
+position: absolute;
+}
+ul#slider li p {
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: absolute;
+color: #fff;
+background: rgba(0, 0, 0, .5);
+width: 100%;
+}
+ul#slider li p span {
+line-height: 1.2em;
+padding: 10px;
+display: block;
+}
+/* Animation for the :target image. Slides the image in. */
+@-webkit-keyframes moveTarget {
+0% {
+left:-700px;
+}
+100% {
+left:0px;
+}
+}
+ul#slider li:target {
+-webkit-animation-name: moveTarget;
+-webkit-animation-duration: .5s;
+-webkit-animation-iteration-count: 1;
+top:0px;
+left: 0px;
+z-index: 10;
+}
+/*
+Animation for the current image. Slides it out the frame and back to the starting position.
+Adds a lower z-index than the now current image.
+*/
+@-webkit-keyframes moveIt {
+0% {
+left:0px;
+}
+50% {
+left:700px;
+}
+100% {
+left:-700px;
+z-index: 5;
+}
+}
+ul#slider li:not(:target) {
+-webkit-animation-name: moveIt;
+-webkit-animation-duration: 1.5s;
+-webkit-animation-iteration-count: 1;
+top:0px;
+left: 0px;
+}
+/* ACORDIOOOON */
+.ac-container{
+width: 450px;
+margin: 35px auto 30px auto;
+text-align: left;
+float: left;
+}
+.ac-container label{
+font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+padding: 5px 20px;
+position: relative;
+z-index: 20;
+display: block;
+height: 30px;
+cursor: pointer;
+color: #777;
+text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+line-height: 33px;
+font-size: 19px;
+background: #ffffff;
+}
+.ac-container label:hover{
+background: #fff;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+background: #c6e1ec;
+color: #3d7489;
+text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+box-shadow:
+0px 0px 0px 1px rgba(155,155,155,0.3),
+0px 2px 2px rgba(0,0,0,0.1);
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+content: '';
+position: absolute;
+width: 24px;
+height: 24px;
+right: 13px;
+top: 7px;
+background: transparent url(../images/arrow_down.png) no-repeat center center;
+}
+.ac-container input:checked + label:hover:after{
+background-image: url(../images/arrow_up.png);
+}
+.ac-container input{
+display: none;
+}
+.ac-container article{
+background: rgba(255, 255, 255, 0.5);
+margin-top: -1px;
+overflow: hidden;
+height: 0px;
+position: relative;
+z-index: 10;
+-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container article p{
+font-style: italic;
+color: #777;
+line-height: 23px;
+font-size: 14px;
+padding: 20px;
+text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.ac-container input:checked ~ article{
+-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.ac-container input:checked ~ article.ac-small{
+height: 140px;
+}
+.ac-container input:checked ~ article.ac-medium{
+height: 180px;
+}
+.ac-container input:checked ~ article.ac-large{
+height: 230px;
+}
+/* GOOOOOOOOD ACCORDIOOOON */
+.AccordionTitle, .AccordionContent, .AccordionContainer
+{
+position:relative;
+float: left;
+width:300px;
+}
+.AccordionContainer{
+margin-left: 50px;
+}
+.AccordionTitle
+{
+height:78px;
+overflow:hidden;
+cursor:pointer;
+font-size:16pt;
+font-weight:bold;
+color: #fff;
+text-align:left;
+display:table-cell;
+border-bottom: 1px dotted #fff;
+-moz-user-select:none;
+}
+.AccordionContent {
+height:0px;
+overflow:auto;
+font-family: Arial, sans-serif;
+color: #fff;
+background-color: #131313;
+display:none;
+}
+.AccordionTitle p{
+font-size:18pt;
+margin-left: 60px;
+margin-top: 15px;
+color: #fff;
+font-family:'Inder', sans-serif;
+}
+/*
+.AccordionContainer
+{
+border: 10px solid #000;
+-webkit-box-shadow: #131313 2px 5px 10px;
+-moz-box-shadow: #131313 2px 5px 10px;
+box-shadow: #131313 2px 5px 10px 5px;
+}
+*/
+h2 {
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 20px;
+color: #ffffff;
+margin: 2px 5px;
+padding: 0px;
+text-align: center;
+}
+/* GALLERY */
+#box {
+float:right;
+text-align: left;
+width: 470px;
+height: 450px;
+margin: 0 50px 0 auto;
+}
+#imagecontainer {
+float:center;
+text-align: left;
+width: 450px;
+height: auto;
+padding-top:5px;
+padding-bottom:5px;
+padding-left: 5px;
+background: #000;
+overflow: hidden;
+border: 10px solid #000;
+-webkit-box-shadow: #131313 2px 5px 10px;
+-moz-box-shadow: #131313 2px 5px 10px;
+box-shadow: #131313 2px 5px 10px 5px;
+-webkit-animation-name: fadeIn;
+-webkit-animation-duration: 3s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-delay: 0s;
+}
+#thumbscontainer {
+padding:0;
+height 110px;
+margin-top:10px;
+margin-left: 10px;
+}
+#myimage {
+width: 450px;
+height:auto;
+border:0;
+margin-left: 10px;
+}
+#thumbscontainer img {
+width:70px;
+height:53px;
+border:0;
+}
+#thumbscontainer a {
+display:block;
+float:left;
+height:55px;
+width: 72px;
+padding:3px;
+margin:0px;
+text-decoration:none;
+}
+#thumbscontainer a:hover {
+background-color:gray;
+}
+#thumbscontainer a:active, #thumbscontainer a:focus {
+background-color:gray;
+}
+/* LIGHT BOX */
+#lightbox{
+background-color:#eee;
+padding: 10px;
+border-bottom: 2px solid #666;
+border-right: 2px solid #666;
+}
+#lightboxDetails{
+font-size: 0.8em;
+padding-top: 0.4em;
+}
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+#lightbox img{ border: none; clear: both;}
+#overlay img{ border: none; }
+#overlay{ background-image: url(http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/lightbox/overlay.png); }
+* html #overlay{
+background-color: #333;
+back\ground-color: transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/lightbox/overlay.png", sizingMethod="scale");
+}
+#fader {
+position: relative;
+width: 100%;
+height: 400px;
+}
+.button {
+background-color: green;
+width: 50px;
+height: 30px;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+position: absolute;
+top: 30px;
+}
+#next {
+right: 100px;
+}
+#prev {
+left: 100px;
+}
+</style>
+<script type="text/javascript">
+var ContentHeight = 240;
+var TimeToSlide = 250.0;
+var openAccordion = '';
+function runAccordion(index)
+{
+var nID = "Accordion" + index + "Content";
+if(openAccordion == nID)
+nID = '';
+setTimeout("animate(" + new Date().getTime() + "," + TimeToSlide + ",'" + openAccordion + "','" + nID + "')", 33);
+openAccordion = nID;
+}
+function animate(lastTick, timeLeft, closingId, openingId)
+{
+var curTick = new Date().getTime();
+var elapsedTicks = curTick - lastTick;
+var opening = (openingId == '') ? null : document.getElementById(openingId);
+var closing = (closingId == '') ? null : document.getElementById(closingId);
+if(timeLeft <= elapsedTicks)
+{
+if(opening != null)
+opening.style.height = ContentHeight + 'px';
+if(closing != null)
+{
+closing.style.display = 'none';
+closing.style.height = '0px';
+}
+return;
+}
+timeLeft -= elapsedTicks;
+var newClosedHeight = Math.round((timeLeft/TimeToSlide) * ContentHeight);
+if(opening != null)
+{
+if(opening.style.display != 'block')
+opening.style.display = 'block';
+opening.style.height = (ContentHeight - newClosedHeight) + 'px';
+}
+if(closing != null)
+closing.style.height = newClosedHeight + 'px';
+setTimeout("animate(" + curTick + "," + timeLeft +",'" + closingId + "','" + openingId + "')", 33);
+}
+</script>
+<script type="text/javascript">
+function update(url,index,isSuper) {
+document['PhotoBig'].src=url;
+}
+</script>
+<script language="Javascript" type="text/javascript">
+<!--
+var locator;
+var imglist = new Array (
+"http://infashiononline.com/media/catalog/product/cache/1/image/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_angle.jpg",
+"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_side.jpg",
+"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_side2.jpg",
+"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_zoom.jpg",
+"http://infashiononline.com/media/catalog/product/cache/1/image/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_angle.jpg",
+"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_side.jpg",
+"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_side2.jpg",
+"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_zoom.jpg"
+)
+function showimg(arrayno) {
+myimage.src = imglist[arrayno];
+}
+function showimg1(arrayno) {
+myimage1.src = imglist[arrayno];
+}
+//-->
+</script>
+<script type="text/javascript"> /* LIGHTBOX */
+/*
+Lightbox JS: Fullsize Image Overlays
+by Lokesh Dhakar - http://www.huddletogether.com
+For more information on this script, visit:
+http://huddletogether.com/projects/lightbox/
+Script featured on Dynamic Drive code library Jan 24th, 06':
+http://www.dynamicdrive.com
+Licensed under the Creative Commons Attribution 2.5 License - http://creativecommons.org/licenses/by/2.5/
+(basically, do anything you want, just leave my name and link)
+Table of Contents
+-----------------
+Configuration
+Functions
+- getPageScroll()
+- getPageSize()
+- pause()
+- getKey()
+- listenKey()
+- showLightbox()
+- hideLightbox()
+- initLightbox()
+- addLoadEvent()
+Function Calls
+- addLoadEvent(initLightbox)
+*/
+//
+// Configuration
+//
+// If you would like to use a custom loading image or close button reference them in the next two lines.
+var loadingImage = 'http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/lightbox/loading.gif';
+var closeButton = 'http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/lightbox/close.gif';
+//
+// getPageScroll()
+// Returns array with x,y page scroll values.
+// Core code from - quirksmode.org
+//
+function getPageScroll(){
+var yScroll;
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){ // Explorer 6 Strict
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {// all other Explorers
+yScroll = document.body.scrollTop;
+}
+arrayPageScroll = new Array('',yScroll)
+return arrayPageScroll;
+}
+//
+// getPageSize()
+// Returns array with page width, height and window width, height
+// Core code from - quirksmode.org
+// Edit for Firefox by pHaez
+//
+function getPageSize(){
+var xScroll, yScroll;
+if (window.innerHeight && window.scrollMaxY) {
+xScroll = document.body.scrollWidth;
+yScroll = window.innerHeight + window.scrollMaxY;
+} else if (document.body.scrollHeight > document.body.offsetHeight){ // all but Explorer Mac
+xScroll = document.body.scrollWidth;
+yScroll = document.body.scrollHeight;
+} else { // Explorer Mac...would also work in Explorer 6 Strict, Mozilla and Safari
+xScroll = document.body.offsetWidth;
+yScroll = document.body.offsetHeight;
+}
+var windowWidth, windowHeight;
+if (self.innerHeight) { // all except Explorer
+windowWidth = self.innerWidth;
+windowHeight = self.innerHeight;
+} else if (document.documentElement && document.documentElement.clientHeight) { // Explorer 6 Strict Mode
+windowWidth = document.documentElement.clientWidth;
+windowHeight = document.documentElement.clientHeight;
+} else if (document.body) { // other Explorers
+windowWidth = document.body.clientWidth;
+windowHeight = document.body.clientHeight;
+}
+// for small pages with total height less then height of the viewport
+if(yScroll < windowHeight){
+pageHeight = windowHeight;
+} else {
+pageHeight = yScroll;
+}
+// for small pages with total width less then width of the viewport
+if(xScroll < windowWidth){
+pageWidth = windowWidth;
+} else {
+pageWidth = xScroll;
+}
+arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight)
+return arrayPageSize;
+}
+//
+// pause(numberMillis)
+// Pauses code execution for specified time. Uses busy code, not good.
+// Code from http://www.faqts.com/knowledge_base/view.phtml/aid/1602
+//
+function pause(numberMillis) {
+var now = new Date();
+var exitTime = now.getTime() + numberMillis;
+while (true) {
+now = new Date();
+if (now.getTime() > exitTime)
+return;
+}
+}
+//
+// getKey(key)
+// Gets keycode. If 'x' is pressed then it hides the lightbox.
+//
+function getKey(e){
+if (e == null) { // ie
+keycode = event.keyCode;
+} else { // mozilla
+keycode = e.which;
+}
+key = String.fromCharCode(keycode).toLowerCase();
+if(key == 'x'){ hideLightbox(); }
+}
+//
+// listenKey()
+//
+function listenKey () { document.onkeypress = getKey; }
+//
+// showLightbox()
+// Preloads images. Pleaces new image in lightbox then centers and displays.
+//
+function showLightbox(objLink)
+{
+// prep objects
+var objOverlay = document.getElementById('overlay');
+var objLightbox = document.getElementById('lightbox');
+var objCaption = document.getElementById('lightboxCaption');
+var objImage = document.getElementById('lightboxImage');
+var objLoadingImage = document.getElementById('loadingImage');
+var objLightboxDetails = document.getElementById('lightboxDetails');
+var arrayPageSize = getPageSize();
+var arrayPageScroll = getPageScroll();
+// center loadingImage if it exists
+if (objLoadingImage) {
+objLoadingImage.style.top = (arrayPageScroll[1] + ((arrayPageSize[3] - 35 - objLoadingImage.height) / 2) + 'px');
+objLoadingImage.style.left = (((arrayPageSize[0] - 20 - objLoadingImage.width) / 2) + 'px');
+objLoadingImage.style.display = 'block';
+}
+// set height of Overlay to take up whole page and show
+objOverlay.style.height = (arrayPageSize[1] + 'px');
+objOverlay.style.display = 'block';
+// preload image
+imgPreload = new Image();
+imgPreload.onload=function(){
+objImage.src = objLink.href;
+// center lightbox and make sure that the top and left values are not negative
+// and the image placed outside the viewport
+var lightboxTop = arrayPageScroll[1] + ((arrayPageSize[3] - 35 - imgPreload.height) / 2);
+var lightboxLeft = ((arrayPageSize[0] - 20 - imgPreload.width) / 2);
+objLightbox.style.top = (lightboxTop < 0) ? "0px" : lightboxTop + "px";
+objLightbox.style.left = (lightboxLeft < 0) ? "0px" : lightboxLeft + "px";
+objLightboxDetails.style.width = imgPreload.width + 'px';
+if(objLink.getAttribute('title')){
+objCaption.style.display = 'block';
+//objCaption.style.width = imgPreload.width + 'px';
+objCaption.innerHTML = objLink.getAttribute('title');
+} else {
+objCaption.style.display = 'none';
+}
+// A small pause between the image loading and displaying is required with IE,
+// this prevents the previous image displaying for a short burst causing flicker.
+if (navigator.appVersion.indexOf("MSIE")!=-1){
+pause(250);
+}
+if (objLoadingImage) { objLoadingImage.style.display = 'none'; }
+objLightbox.style.display = 'block';
+// After image is loaded, update the overlay height as the new image might have
+// increased the overall page height.
+arrayPageSize = getPageSize();
+objOverlay.style.height = (arrayPageSize[1] + 'px');
+// Check for 'x' keypress
+listenKey();
+return false;
+}
+imgPreload.src = objLink.href;
+}
+//
+// hideLightbox()
+//
+function hideLightbox()
+{
+// get objects
+objOverlay = document.getElementById('overlay');
+objLightbox = document.getElementById('lightbox');
+// hide lightbox and overlay
+objOverlay.style.display = 'none';
+objLightbox.style.display = 'none';
+// disable keypress listener
+document.onkeypress = '';
+}
+//
+// initLightbox()
+// Function runs on window load, going through link tags looking for rel="lightbox".
+// These links receive onclick events that enable the lightbox display for their targets.
+// The function also inserts html markup at the top of the page which will be used as a
+// container for the overlay pattern and the inline image.
+//
+function initLightbox()
+{
+if (!document.getElementsByTagName){ return; }
+var anchors = document.getElementsByTagName("a");
+// loop through all anchor tags
+for (var i=0; i<anchors.length; i++){
+var anchor = anchors[i];
+if (anchor.getAttribute("href") && (anchor.getAttribute("rel") == "lightbox")){
+anchor.onclick = function () {showLightbox(this); return false;}
+}
+}
+// the rest of this code inserts html at the top of the page that looks like this:
+//
+// <div id="overlay">
+// <a href="#" onclick="hideLightbox(); return false;"><img id="loadingImage" /></a>
+// </div>
+// <div id="lightbox">
+// <a href="#" onclick="hideLightbox(); return false;" title="Click anywhere to close image">
+// <img id="closeButton" />
+// <img id="lightboxImage" />
+// </a>
+// <div id="lightboxDetails">
+// <div id="lightboxCaption"></div>
+// <div id="keyboardMsg"></div>
+// </div>
+// </div>
+var objBody = document.getElementsByTagName("body").item(0);
+// create overlay div and hardcode some functional styles (aesthetic styles are in CSS file)
+var objOverlay = document.createElement("div");
+objOverlay.setAttribute('id','overlay');
+objOverlay.onclick = function () {hideLightbox(); return false;}
+objOverlay.style.display = 'none';
+objOverlay.style.position = 'absolute';
+objOverlay.style.top = '0';
+objOverlay.style.left = '0';
+objOverlay.style.zIndex = '90';
+objOverlay.style.width = '100%';
+objBody.insertBefore(objOverlay, objBody.firstChild);
+var arrayPageSize = getPageSize();
+var arrayPageScroll = getPageScroll();
+// preload and create loader image
+var imgPreloader = new Image();
+// if loader image found, create link to hide lightbox and create loadingimage
+imgPreloader.onload=function(){
+var objLoadingImageLink = document.createElement("a");
+objLoadingImageLink.setAttribute('href','#');
+objLoadingImageLink.onclick = function () {hideLightbox(); return false;}
+objOverlay.appendChild(objLoadingImageLink);
+var objLoadingImage = document.createElement("img");
+objLoadingImage.src = loadingImage;
+objLoadingImage.setAttribute('id','loadingImage');
+objLoadingImage.style.position = 'absolute';
+objLoadingImage.style.zIndex = '150';
+objLoadingImageLink.appendChild(objLoadingImage);
+imgPreloader.onload=function(){}; // clear onLoad, as IE will flip out w/animated gifs
+return false;
+}
+imgPreloader.src = loadingImage;
+// create lightbox div, same note about styles as above
+var objLightbox = document.createElement("div");
+objLightbox.setAttribute('id','lightbox');
+objLightbox.style.display = 'none';
+objLightbox.style.position = 'absolute';
+objLightbox.style.zIndex = '100';
+objBody.insertBefore(objLightbox, objOverlay.nextSibling);
+// create link
+var objLink = document.createElement("a");
+objLink.setAttribute('href','#');
+objLink.setAttribute('title','Click to close');
+objLink.onclick = function () {hideLightbox(); return false;}
+objLightbox.appendChild(objLink);
+// preload and create close button image
+var imgPreloadCloseButton = new Image();
+// if close button image found,
+imgPreloadCloseButton.onload=function(){
+var objCloseButton = document.createElement("img");
+objCloseButton.src = closeButton;
+objCloseButton.setAttribute('id','closeButton');
+objCloseButton.style.position = 'absolute';
+objCloseButton.style.zIndex = '200';
+objLink.appendChild(objCloseButton);
+return false;
+}
+imgPreloadCloseButton.src = closeButton;
+// create image
+var objImage = document.createElement("img");
+objImage.setAttribute('id','lightboxImage');
+objLink.appendChild(objImage);
+// create details div, a container for the caption and keyboard message
+var objLightboxDetails = document.createElement("div");
+objLightboxDetails.setAttribute('id','lightboxDetails');
+objLightbox.appendChild(objLightboxDetails);
+// create caption
+var objCaption = document.createElement("div");
+objCaption.setAttribute('id','lightboxCaption');
+objCaption.style.display = 'none';
+objLightboxDetails.appendChild(objCaption);
+// create keyboard message
+var objKeyboardMsg = document.createElement("div");
+objKeyboardMsg.setAttribute('id','keyboardMsg');
+objKeyboardMsg.innerHTML = 'press <kbd>x</kbd> to close';
+objLightboxDetails.appendChild(objKeyboardMsg);
+}
+//
+// addLoadEvent()
+// Adds event to window.onload without overwriting currently assigned onload functions.
+// Function found at Simon Willison's weblog - http://simon.incutio.com/
+//
+function addLoadEvent(func)
+{
+var oldonload = window.onload;
+if (typeof window.onload != 'function'){
+window.onload = func;
+} else {
+window.onload = function(){
+oldonload();
+func();
+}
+}
+}
+addLoadEvent(initLightbox); // run initLightbox onLoad
+</script>
+<div id="superouter">
+<div id="outer-container">
+<div id="content-left">
+<div id="header">
+<p id="logo"><img src="http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/header_logo_black.png" alt=""></p>
+<p id="header-right">TEL.: 0845 519 6590<br> E-mail:<a href="help@infashiononline.com">help@infashiononline.com</a></p>
+</div> <!-- header -->
+</div> <!-- content left -->
+<div id="dropppmenu">
+<div class="horizontal-centering"><div><div>
+<ul id="nav" class="dropdown dropdown-horizontal">
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online">Home</a></li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Women" class="dir">WOMEN Shoes</a>
+<ul>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Ballet-pumps">BALLET PUMPS</a></li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Court-shoes">COURT SHOES</a></li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Evening-wear-/_i.html?_fsub=534881419&amp;_sid=1132264919&amp;_trksid=p4634.c0.m322">EVENING WEAR</a></li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Boots">BOOTS</a></li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Wedges">WEDGES</a></li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Flats">FLATS</a></li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Brogues">BROGUES</a></li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Sandals-/_i.html?_fsub=534881919&amp;_sid=1132264919&amp;_trksid=p4634.c0.m322">SANDALS</a></li>
+</ul>
+</li>
+<li><a href="http://stores.ebay.co.uk/IN-FO-InFashion-Online/Men" class="dir">MEN Shoes</a>
+<ul>
+<li><a href="./">FORMAL</a></li>
+<li><a href="./">CASUAL</a></li>
+<li><a href="./">BOOTS</a></li>
+</ul>
+</li>
+<li><a href="http://members.ebay.com/ws/eBayISAPI.dll?ViewUserPage&amp;userid=infashion_apparel">ABOUT US</a></li>
+</ul>
+</div></div></div>
+</div> <!-- dropppmenu -->
+<div id="maincontent">
+<div id="AccordionContainer" class="AccordionContainer">
+<div onclick="runAccordion(1);">
+<div class="AccordionTitle" onselectstart="return false;" style="background-image:url(http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/icons/shoeinfo2.png); background-repeat: no-repeat; background-position: left;">
+<p>
+Shoes description
+</p>
+</div>
+</div>
+<div id="Accordion1Content" class="AccordionContent">
+<h2>Carlton London</h2>
+<h2>Model: Hayley</h2>
+<p style="font-family:Arial,Helvetica,Garuda,sans-serif;">Infashion Online is delighted to present these ladies calf length boots, with inside zip fastening.  Available in Black and Oxblood.<br><br>
+Product code:<br>
+Black: TF1218-06-BLK<br>
+Oxblood: TF1218-06-OXB<br>
+</p>
+</div>
+<div onclick="runAccordion(2);">
+<div class="AccordionTitle" onselectstart="return false;" style="background-image:url(http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/icons/payment2.png);background-repeat: no-repeat; background-position: left;">
+<p>
+Payment
+</p>
+</div>
+</div>
+<div id="Accordion2Content" class="AccordionContent">
+<p>We must receive full payment both of the price of the Goods and any delivery charges before we can accept any offers.
+</p>
+</div>
+<div onclick="runAccordion(3);">
+<div class="AccordionTitle" onselectstart="return false;" style="background-image:url(http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/icons/shipping2.png);background-repeat: no-repeat; background-position: left;">
+<p>
+Shipping
+</p>
+</div>
+</div>
+<div id="Accordion3Content" class="AccordionContent">
+<p style="font-size: 13px;">All deliveries are subject to stock availability and authorisation of your payment.<br>
+We aim to deliver your item within three working days using Standard Delivery. There are a small number of postcodes, usually in remote rural areas, where we cannot guarantee delivery within our usual timescale, however we will notify you as soon as possible.
+Delivery will only be made to your billing address. We deliver to most postal areas in the UK. We reserve the right not to deliver orders if we believe the address is not secure, for example, to a communal postal address or PO Box. If this affects your order, we will notify you as soon as possible.
+A signature will be required on receipt of your goods being delivered. If you are not around to accept your parcel a calling card will be posted through your door to let you know a delivery has been attempted.<br>
+Please note that orders are only dispatched Monday to Friday.&nbsp; Please note that orders are not dispatched on public holidays.<br>
+</p>
+</div>
+</div>
+<div id="box">
+<div id="imagecontainer">
+<img id="myimage">
+<div id="thumbscontainer">
+</div>
+</div>
+<script language="Javascript" type="text/javascript">
+<!--
+showimg(0);
+var html= "";
+for (var i=0;i<imglist.length;i++)
+{html = html + "<a href = '#' onmouseover = 'showimg(" + i + ");return false;' onclick = 'showimg(" + i + ");return false;'><img src='" + imglist[i] + "' /></a>";}
+document.getElementById("thumbscontainer").innerHTML= html;
+//-->
+</script>
+</div> <!-- maincontent -->
+</div> <!-- outer container -->
+</div> <!-- superoter -->
+</div>
