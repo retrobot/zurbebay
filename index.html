@@ -3,7 +3,7 @@
 <html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Foundation 4</title>
+  <title>Ebay listing generator for Infashion Online</title>
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/foundation.css">
@@ -11,7 +11,7 @@
   <script src="./js/vendor/custom.modernizr.js"></script>
 
 </head>
-<body ng-app>
+<body ng-app="myApp">
 <div class="contain-to-grid sticky">
 <nav class="top-bar">
   <ul class="title-area">
@@ -55,12 +55,33 @@
 
 			<!-- Grid Example -->
 			<div class="row">
+				<h3 id="description">Photos</h3>
+				<div class="large-12 columns">
+					<form>
+						<fieldset ng-init="photos = [
+						{mes:'aaa'},
+						{mes:'bbb'},
+						{mes:'ccc'}
+						]">
+						<legend>Insert photos url's</legend>
+						<p>How many photos would you like to insert?</p>
+						<p small>You have chosen: <b>{{photosQuantity | number}}</b></p>
+						<input type="number" placeholder="Insert number" ng-model="photosQuantity">
+						<button ng-click="calc()">fetch</button><br>
+						<hr>
+							<input type="url" ng-repeat="photos in numberak" placeholder="URL address of a photo..."></textarea>
+							<textarea id="description" style="height:200px" ng-model="description" placeholder="Insert description here...">photos</textarea>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="row">
 				<h3 id="description">Insert description</h3>
 				<div class="large-12 columns">
 					<form>
 						<fieldset>
 							<legend>Description</legend>
-							<textarea id="description" style="height:200px" ng-model="description">Hello</textarea>
+							<textarea id="description" style="height:200px" ng-model="description" placeholder="Insert description here...">Hello</textarea>
 						</fieldset>
 					</form>
 				</div>
@@ -71,7 +92,7 @@
 					<form>
 						<fieldset>
 							<legend>(Optional) Replace/amend default payment wording</legend>
-							<textarea id="payment"  style="height:200px" ng-model="payment">Hello</textarea>
+							<textarea id="payment"  style="height:8em" ng-model="payment">Hello</textarea>
 						</fieldset>
 					</form>
 				</div>
@@ -82,22 +103,25 @@
 					<form>
 						<fieldset>
 							<legend>(Optional) Replace/amend default shipping wording</legend>
-							<textarea id="shipping" style="height:230px" ng-model="shipping">{{shipping}}Hello</textarea>
+							<textarea id="shipping" style="height:21em" ng-model="shipping">{{shipping}}Hello</textarea>
 						</fieldset>
 					</form>
 				</div>
 			</div>	
-			<div class="row" ng-controller="FetchCtrl">
+			<div class="row" ng-controller="FourthCtrl">
 			<h3 id="result">Result</h3>		
 				<div class="large-12 columns">
 					<form>
 						<fieldset>
-							<legend>Result</legend>
+							<legend>Click below, copy and paste into "custom html" input in Ebay listing</legend>
 							<!-- <button ng-click="fetch()">fetch</button> -->
-							<textarea ng-init="fetch('data/toptext.txt', 'top'); fetch('data/bottomtext.txt', 'bottom'); fetch('data/afterdescription.txt', 'afterdescription'); fetch('data/aftershipping.txt', 'aftershipping'); fetch('data/afterpayment.txt', 'afterpayment')" style="height:200px" disabled>{{data.top}}{{data.bottom}}
-								{{description}}{{data.afterdescription}}{{payment}}{{data.afterpayment}}{{shipping}}{{data.aftershipping}}</textarea>
+							<textarea ng-init="fetch('data/original_desc.txt', 'body,styles,topscript,before_description,before_payment,before_shipping,endscript');" style="height:250px;" select-on-click readonly>{{data.body}}{{data.styles}}{{data.topscript}}{{data.before_description}}{{description}}{{data.before_payment}}{{payment}}{{data.before_shipping}}{{shipping}}{{data.endscript}}</textarea>
 						</fieldset>
+
 					</form>
+					<p>Tester</p>
+					<textarea type="text" select-on-click style="width:200px">{{description}} Hi </textarea>
+
 				</div>
 			</div>	
 			<div class="row">
@@ -152,22 +176,19 @@
       </div>
 		</div>
 
-		<div class="large-4 columns">
+		<div class="large-4 columns" ng-controller="FourthCtrl">
 			<h4>Getting Started</h4>
-			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+			<p>Please insert text in text boxes</p>
+			<textarea type="text" id="txtfld" onclick="SelectAll('txtfld');" style="width:200px">Heeloo  </textarea>
 
-			<h4>Other Resources</h4>
-			<p>Once you've exhausted the fun in this document, you should check out:</p>
-			<ul class="disc">
-				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br>Everything you need to know about using the framework.</li>
-				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br>Latest code, issue reports, feature requests and more.</li>
-				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br>Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-			</ul>
 		</div>
 	</div>
 
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
-  <script src="./js/app.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/autoresize_textarea.js"></script>
   
   <script>
   document.write('<script src=' +

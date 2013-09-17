@@ -9,6 +9,7 @@
 <link href="http://www.carltonlondonwholesale.com/infob/eb_store/no_js/css/dropdownmenu/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css">
 <link href="http://www.carltonlondonwholesale.com/infob/eb_store/no_js/css/dropdownmenu/dropdown/themes/adobe.com/default.advanced.css" media="screen" rel="stylesheet" type="text/css">
 <link href="http://www.carltonlondonwholesale.com/infob/eb_store/no_js/css/dropdownmenu/horizontal-centering.css" media="all" rel="stylesheet" type="text/css">
+<!---------------------DELIMITER----------------->
 <style type="text/css">
 body {
 width: 960px;
@@ -501,6 +502,7 @@ right: 100px;
 left: 100px;
 }
 </style>
+<!---------------------DELIMITER----------------->
 <script type="text/javascript">
 var ContentHeight = 240;
 var TimeToSlide = 250.0;
@@ -551,16 +553,7 @@ document['PhotoBig'].src=url;
 <script language="Javascript" type="text/javascript">
 <!--
 var locator;
-var imglist = new Array (
-"http://infashiononline.com/media/catalog/product/cache/1/image/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_angle.jpg",
-"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_side.jpg",
-"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_side2.jpg",
-"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-blk_zoom.jpg",
-"http://infashiononline.com/media/catalog/product/cache/1/image/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_angle.jpg",
-"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_side.jpg",
-"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_side2.jpg",
-"http://infashiononline.com/media/catalog/product/cache/1/thumbnail/483x398/9df78eab33525d08d6e5fb8d27136e95/t/f/tf1218-06-oxb_zoom.jpg"
-)
+var imglist = new Array (<!---------------------DELIMITER----------------->)
 function showimg(arrayno) {
 myimage.src = imglist[arrayno];
 }
@@ -940,13 +933,7 @@ Shoes description
 </div>
 </div>
 <div id="Accordion1Content" class="AccordionContent">
-<h2>Carlton London</h2>
-<h2>Model: Hayley</h2>
-<p style="font-family:Arial,Helvetica,Garuda,sans-serif;">Infashion Online is delighted to present these ladies calf length boots, with inside zip fastening.  Available in Black and Oxblood.<br><br>
-Product code:<br>
-Black: TF1218-06-BLK<br>
-Oxblood: TF1218-06-OXB<br>
-</p>
+<!---------------------DELIMITER----------------->
 </div>
 <div onclick="runAccordion(2);">
 <div class="AccordionTitle" onselectstart="return false;" style="background-image:url(http://www.carltonlondonwholesale.com/infob/eb_store/no_js/images/icons/payment2.png);background-repeat: no-repeat; background-position: left;">
@@ -956,7 +943,8 @@ Payment
 </div>
 </div>
 <div id="Accordion2Content" class="AccordionContent">
-<p>We must receive full payment both of the price of the Goods and any delivery charges before we can accept any offers.
+<p>
+<!---------------------DELIMITER----------------->
 </p>
 </div>
 <div onclick="runAccordion(3);">
@@ -967,11 +955,8 @@ Shipping
 </div>
 </div>
 <div id="Accordion3Content" class="AccordionContent">
-<p style="font-size: 13px;">All deliveries are subject to stock availability and authorisation of your payment.<br>
-We aim to deliver your item within three working days using Standard Delivery. There are a small number of postcodes, usually in remote rural areas, where we cannot guarantee delivery within our usual timescale, however we will notify you as soon as possible.
-Delivery will only be made to your billing address. We deliver to most postal areas in the UK. We reserve the right not to deliver orders if we believe the address is not secure, for example, to a communal postal address or PO Box. If this affects your order, we will notify you as soon as possible.
-A signature will be required on receipt of your goods being delivered. If you are not around to accept your parcel a calling card will be posted through your door to let you know a delivery has been attempted.<br>
-Please note that orders are only dispatched Monday to Friday.&nbsp; Please note that orders are not dispatched on public holidays.<br>
+<p style="font-size: 13px;">
+<!---------------------DELIMITER----------------->
 </p>
 </div>
 </div>
