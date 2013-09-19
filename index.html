@@ -46,6 +46,9 @@
 			<h2>Ebay generator</h2>
 			<p>Please follow the instructions on the right sidebar</p>
 			<hr>
+			<?php echo "Iam php"; ?>
+		<?php require('magma.php'); ?>
+			
 		</div>
 	</div>
 
@@ -117,49 +120,80 @@
 							<!-- <button ng-click="fetch()">fetch</button> -->
 							<textarea ng-init="fetch('data/original_desc.txt', 'body,styles,topscript,before_description,before_payment,before_shipping,endscript');" style="height:250px;" select-on-click readonly>{{data.body}}{{data.styles}}{{data.topscript}}{{data.before_description}}{{description}}{{data.before_payment}}{{payment}}{{data.before_shipping}}{{shipping}}{{data.endscript}}</textarea>
 						</fieldset>
-
 					</form>
-					<p>Tester</p>
-					<textarea type="text" select-on-click style="width:200px">{{description}} Hi </textarea>
+				</div>
+			</div>
+		</div>
+			<div class="large-4 columns" ng-controller="FourthCtrl">
+				<h4>Getting Started</h4>
+				<p>Please insert text in text boxes</p>
+				<textarea type="text" id="txtfld" onclick="SelectAll('txtfld');" style="width:200px">Heeloo  </textarea>
+			</div>
+	</div>
 
-				</div>
-			</div>	
-			<div class="row">
-				<div class="large-6 columns">
-					<form>
-						<fieldset>
-							<label>Description</label>
-							<textarea style="height:200px">Hello</textarea>
-						</fieldset>
-					</form>
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
+		HERE
+			<div class="row" ng-controller="FourthCtrl">
+				<div class="large-12 columns">
+					<h3>Search available quantities</h3>
+					<div class="row">
+						<div class="large-6 columns">
+							<div class="panel">
+								You can search by product code, by available quantities or both.
+							</div>
+							<form>
+								<fieldset>
+									<input type="text" placeholder="Search by product code..." ng-model="xmlsearch.item_code">
+									<input type="text" placeholder="Search by quantity..." ng-model="xmlsearch.avail_qty">
+								</fieldset>
+							</form>
+							<div style="height:19em" ng-init="fetch_xml('data/xml/WEB_AVAIL_0000741.xml', 'avail')">
+								<table style="position:absolute" ng-show="(filteredData = (xml.stock_avail.avail | filter:xmlsearch | limitTo:10)) && filteredData.length >= 1 && xmlsearch && xmlsearch.item_code.length >= 1">
+									<tr>
+										<td>Item code</td>
+										<td>Available qty</td>
+									</tr>									
+									<tr ng-repeat="item in filteredData">
+										<td>{{item.item_code}}</td>
+										<td>{{item.avail_qty}}</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="large-6 columns">
+							<div class="panel">
+								You can search by product code, by available quantities or both.
+							</div>
+							<form>
+								<fieldset>
+									<input type="text" placeholder="Search by product code..." ng-model="xmlsearch_items.item_code">
+									<input type="text" placeholder="Search by quantity..." ng-model="xmlsearch_items.avail_qty">
+								</fieldset>
+							</form>
+							<div ng-init="fetch_xml('data/xml/WEB_ITEMS_0000765.xml', 'items')">
+								<table>
+									<tr>
+										<td>Item code</td>
+										<td>Description</td>
+										<td>Selling price</td>
+										<td>Quantity</td>				
+									</tr>								
+									<tr ng-repeat="element in xmlitems.sap_items.item | filter:xmlsearch_items.item_code">
+										<td>{{element.item_code}}</td>
+										<td>{{element.description}}</td>
+										<td>{{element.selling_price}}</td>
+										<td>{{element.amber_qty}}</td>
+									</tr>
+								</table>
+							</div>
+						</div>	
 					</div>
 				</div>
 			</div>
+			<hr>
 			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
+				<div class="large-6 columns">
 				</div>
 			</div>
-
 			<h3>Buttons</h3>
 
       <div class="row">
@@ -176,18 +210,14 @@
       </div>
 		</div>
 
-		<div class="large-4 columns" ng-controller="FourthCtrl">
-			<h4>Getting Started</h4>
-			<p>Please insert text in text boxes</p>
-			<textarea type="text" id="txtfld" onclick="SelectAll('txtfld');" style="width:200px">Heeloo  </textarea>
-
-		</div>
-	</div>
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <script>   if(typeof angular === 'undefined') document.write('<script src="js/angular.min.js"><\/script>')</script>
+
   <script src="js/app.js"></script>
+  <script src="js/xml2json.min.js"></script>
   <script src="js/autoresize_textarea.js"></script>
   
   <script>

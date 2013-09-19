@@ -204,10 +204,35 @@ myAppModule.controller('FourthCtrl', function ($scope, $http, $templateCache) {
         $scope.status = status;
     });
   };
+
+  $scope.fetch_xml = function(fileurl, type) {
+    $scope.code = null;
+    $scope.response = null;
+    $scope.url = fileurl;
+
+    $http({method: $scope.method, url: $scope.url, cache: $templateCache}).
+      success(function(data, status) {
+        var x2js = new X2JS();
+        var json = x2js.xml_str2json(data);
+        if(type ==="avail") {
+          $scope.xml = json;
+          $scope.unparsedxml = data;
+        } else if(type ==="items") {
+          $scope.xmlitems = json;
+          $scope.unparsed_itemsxml = data;
+        }
+          $scope.status = status;
+      }).
+      error(function(data, status) {
+        $scope.parsedxml = data || "Request failed";
+        $scope.status = status;
+    });
+  };
  
   $scope.updateModel = function(method, url) {
     $scope.method = method;
     $scope.url = url;
   };
 });
+
 }(angular)); 
