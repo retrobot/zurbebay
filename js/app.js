@@ -149,6 +149,9 @@ myAppModule.controller('FetchCtrl', function ($scope, $http, $templateCache) {
 // // 	});
 // // }
 
+myAppModule.controller('SuperMasterCtrl', function ($scope) {
+});
+
 
 myAppModule.controller('ThirdCtrl', function ($scope, $http) {
 // function ThirdCtrl($scope, $http) {

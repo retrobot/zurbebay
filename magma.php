@@ -32,8 +32,34 @@ function stream_copy($src, $dest)
     return $len; 
 } 
 
+function stream_appender($src, $dest) 
+{ 
+    // $files = glob($path."/".$pattern); // + glob($path."/*.jpg");
+    $fdest = fopen($dest,'w+');
+    fwrite($fdest, '<latest_all>');
+        
+    $files = glob($src); // + glob($path."/*.jpg");
+    foreach ($files as $key => $value) {
+        // echo "ANOTHER ONE";
+        // echo "KEY:".$key . "VAL:" . $value;
+        $fsrc = fopen($value,'r');
+        if (!stream_copy_to_stream($fsrc,$fdest)) {
+            echo "FAILED!!!";
+        }
+        fclose($fsrc);      
+    }
+
+    fwrite($fdest, '</latest_all>');
+    fclose($fdest); 
+    // file_put_contents("LLLL") 
+    // $len = stream_copy_to_stream("<latest_all>",$fdest); 
+    
+    return "bs";//$len; 
+} 
+
 $datapath = "data/xml";
 $dest_datapath = "data/latest";
+$web_items_path = "data/xml/" . "WEB_ITEMS_*.*";
 
 $latest_items = latest_file($datapath, "WEB_ITEMS_*.*");
 $latest_avail = latest_file($datapath, "WEB_AVAIL_*.*");
@@ -41,10 +67,11 @@ $latest_avail = latest_file($datapath, "WEB_AVAIL_*.*");
 $dest_file_items = $dest_datapath . "/latest_items.xml";
 $dest_file_avail = $dest_datapath . "/latest_avail.xml";
 
-echo "SRC:" . $latest_items;
-echo "DEST:" . $dest_file_items;
+// echo "SRC:" . $latest_items;
+// echo "DEST:" . $dest_file_items;
 
-stream_copy($latest_items, $dest_file_items);
+
+stream_appender($web_items_path, $dest_file_items);
 stream_copy($latest_avail, $dest_file_avail);
 
 // Content printinh
