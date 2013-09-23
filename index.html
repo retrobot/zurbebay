@@ -146,7 +146,6 @@
 			</div>
 	</div>
 
-		HERE
 			<div class="row" ng-controller="FourthCtrl" ng-show="whatApp=='lister'">
 				<div class="large-12 columns">
 					<h3>Search available quantities</h3>
@@ -161,7 +160,7 @@
 									<input type="number" placeholder="Search by quantity..." ng-model="xmlsearch.avail_qty" min="0">
 								</fieldset>
 							</form>
-							<div style="height:19em" ng-init="fetch_xml('data/latest/latest_avail.xml', 'avail')">
+							<div style="height:19em" ng-init="fetchXml('data/latest/latest_avail.xml', 'avail')">
 								<table style="position:absolute" ng-show="(filteredData = (xml.stock_avail.avail | filter:xmlsearch | limitTo:10)) && filteredData.length >= 1 && xmlsearch && xmlsearch.item_code.length >= 1">
 									<tr>
 										<td>Item code</td>
@@ -186,7 +185,7 @@
 									<input type="number" placeholder="Search by quantity..." ng-model="xmlsearch_items.avail_qty">
 								</fieldset>
 							</form>
-							<div ng-init="fetch_xml('data/latest/latest_items.xml', 'items')">
+							<div ng-init="fetchXml('data/latest/latest_items.xml', 'items')">
 								<table ng-show="(itemsFiltered = (xmlitems.latest_all.item | filter:xmlsearch_items.item_code | limitTo:8)) && itemsFiltered.length >= 0 && xmlsearch_items && xmlsearch_items.item_code.length >= 1">
 									<tr>
 										<td>Item code</td>
