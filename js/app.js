@@ -1,7 +1,14 @@
 (function (angular) {
-  var myAppModule = angular.module('myApp', []);
+  var myApp = angular.module('myApp', []).
+  config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+    when('/', {templateUrl: 'index.html', controller: 'MasterCtrl'}).
+    when('/ebaygenerator', {templateUrl: 'partials/ebay-generator.html', controller: 'MasterCtrl'}).
+    when('/sapcheck', {templateUrl: 'partials/sap-check.html', controller: 'MasterCtrl'}).
+    otherwise({redirectTo: '/'});
+  }]);
 
-  myAppModule.directive('selectOnClick', function () {
+  myApp.directive('selectOnClick', function () {
       // Linker function
       return function (scope, element) { //(scope, element, attrs)
           element.bind('click', function () {
@@ -10,10 +17,10 @@
         };
     });
 
-    // myAppModule.controller('Master', function ($scope) {
+    // myApp.controller('Master', function ($scope) {
     //   $scope.content = 'foobar';
     // });
-  myAppModule.controller('Master', function ($scope) {
+  myApp.controller('MasterCtrl', function ($scope) {
     // var toptext = 'client.send()';
     $scope.photosQuantity = parseInt($scope.photosQuantity, 10);
     $scope.numberak = {};
@@ -62,7 +69,7 @@
     // $scope.result -
   });
 
-  myAppModule.controller('FetchCtrl', function ($scope, $http, $templateCache) {
+  myApp.controller('FetchCtrl', function ($scope, $http, $templateCache) {
   // function FetchCtrl($scope, $http, $templateCache) {
     $scope.method = 'GET';
     $scope.url = 'data/toptext.txt';
@@ -122,7 +129,7 @@
 
 
   // // function FetchCtrl($scope, $http, $templateCache) {
-  // // 	$scope.method = 'GET';
+  // //   $scope.method = 'GET';
 
   // //   var data_a = $fetch, ("names.json"),
   // //       data_b = $http.get("naughty.json"),
@@ -137,19 +144,19 @@
   // //     });
 
   // // function SecondCtrl($scope, $http, $templateCache) {
-  // // 	$scope.data_a = $http.get('data/toptext.txt', {cache: false});
-  // // 	$scope.data_b = $http.get('data/bottomtext.txt', {'cache': false});
+  // //   $scope.data_a = $http.get('data/toptext.txt', {cache: false});
+  // //   $scope.data_b = $http.get('data/bottomtext.txt', {'cache': false});
 
-  // // 	$q.all([$scope.product_list_1, $scope.product_list_2]).then(function(values) {
-  // // 	    $scope.results = data;
-  // // 	});
+  // //   $q.all([$scope.product_list_1, $scope.product_list_2]).then(function(values) {
+  // //       $scope.results = data;
+  // //   });
   // // }
 
-  myAppModule.controller('SuperMasterCtrl', function ($scope) {
+  myApp.controller('SuperMasterCtrl', function ($scope) {
   });
 
 
-  myAppModule.controller('ThirdCtrl', function ($scope, $http) {
+  myApp.controller('ThirdCtrl', function ($scope, $http) {
   // function ThirdCtrl($scope, $http) {
     $scope.fetch = function($givenvar, $urlurl) {
       $http({method: 'GET', url: urlurl, cache: $templateCache}).
@@ -169,11 +176,11 @@
     // $scope.bottomt = $http.get('data/bottomtext.txt', {cache: false});
 
     // $q.all([$scope.topt, $scope.bottomt]).then(function(values) {
-    // 	$scope.results = MyService.doCalculation(values[0], values[1]);
+    //  $scope.results = MyService.doCalculation(values[0], values[1]);
     // });
   });
 
-  myAppModule.controller('FourthCtrl', function ($scope, $http, $templateCache) {
+  myApp.controller('FourthCtrl', function ($scope, $http, $templateCache) {
   // function FourthCtrl($scope, $http, $templateCache) {
     $scope.method = 'GET';
     $scope.url = 'data/toptext.txt';
@@ -193,7 +200,7 @@
         success(function(data, status) {
           $scope.dataprocessed = data.replace(/(\r\n|\n|\r)/gm,'').split('<!---------------------DELIMITER----------------->');
           $scope.status = status;
-          for (elem in $scope.dataproperty) {
+          for (var elem in $scope.dataproperty) {
             console.log($scope.dataproperty[elem]);
             $scope.data[$scope.dataproperty[elem]] = $scope.dataprocessed[elem];
           }
@@ -233,5 +240,6 @@
       $scope.url = url;
     };
   });
+
 
   }(angular));

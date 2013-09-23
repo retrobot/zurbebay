@@ -30,7 +30,7 @@
     </ul>
 
     <!-- Right Nav Section -->
-    <ul class="right" ng-show="whatApp=='ebay'">
+    <ul class="right">
 		<li><a href="#description">Description</a></li>
 		<li class="divider"></li>
 		<li><a href="#shipping">Shipping</a></li>
@@ -64,148 +64,10 @@
 		</div>
 	</div>
 
-	<div class="row" ng-controller="Master" ng-show="whatApp=='ebay'">
-		<div class="large-8 columns">
-			<h2>Ebay generator</h2>
-			<p>Please follow the instructions on the right sidebar</p>
-			<hr>
-			<h3>Description</h3>
+<!-- ebay from here -->
 
-			<!-- Grid Example -->
-			<div class="row">
-				<h3 id="description">Photos</h3>
-				<div class="large-12 columns">
-					<form>
-						<fieldset ng-init="photos = [
-						{mes:'aaa'},
-						{mes:'bbb'},
-						{mes:'ccc'}
-						]">
-						<legend>Insert photos url's</legend>
-						<p>How many photos would you like to insert?</p>
-						<p small>You have chosen: <b>{{photosQuantity | number}}</b></p>
-						<input type="number" placeholder="Insert number" ng-model="photosQuantity">
-						<button ng-click="calc()">fetch</button><br>
-						<hr>
-							<input type="url" ng-repeat="photos in numberak" placeholder="URL address of a photo..."></textarea>
-							<textarea id="description" style="height:200px" ng-model="description" placeholder="Insert description here...">photos</textarea>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-			<div class="row">
-				<h3 id="description">Insert description</h3>
-				<div class="large-12 columns">
-					<form>
-						<fieldset>
-							<legend>Description</legend>
-							<textarea id="description" style="height:200px" ng-model="description" placeholder="Insert description here...">Hello</textarea>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-			<div class="row">
-			<h3 id="payment">Payment (Optional)</h3>
-				<div class="large-12 columns">
-					<form>
-						<fieldset>
-							<legend>(Optional) Replace/amend default payment wording</legend>
-							<textarea id="payment"  style="height:8em" ng-model="payment">Hello</textarea>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-			<div class="row">
-			<h3 id="shipping">Shipping (Optional)</h3>
-				<div class="large-12 columns">
-					<form>
-						<fieldset>
-							<legend>(Optional) Replace/amend default shipping wording</legend>
-							<textarea id="shipping" style="height:21em" ng-model="shipping">{{shipping}}Hello</textarea>
-						</fieldset>
-					</form>
-				</div>
-			</div>	
-			<div class="row" ng-controller="FourthCtrl">
-			<h3 id="result">Result</h3>		
-				<div class="large-12 columns">
-					<form>
-						<fieldset>
-							<legend>Click below, copy and paste into "custom html" input in Ebay listing</legend>
-							<!-- <button ng-click="fetch()">fetch</button> -->
-							<textarea ng-init="fetch('data/original_desc.txt', 'body,styles,topscript,before_description,before_payment,before_shipping,endscript');" style="height:250px;" select-on-click readonly>{{data.body}}{{data.styles}}{{data.topscript}}{{data.before_description}}{{description}}{{data.before_payment}}{{payment}}{{data.before_shipping}}{{shipping}}{{data.endscript}}</textarea>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div>
-			<div class="large-4 columns" ng-controller="FourthCtrl">
-				<h4>Getting Started</h4>
-				<p>Please insert text in text boxes</p>
-				<textarea type="text" id="txtfld" onclick="SelectAll('txtfld');" style="width:200px">Heeloo  </textarea>
-			</div>
-	</div>
+<!-- lister -->
 
-			<div class="row" ng-controller="FourthCtrl" ng-show="whatApp=='lister'">
-				<div class="large-12 columns">
-					<h3>Search available quantities</h3>
-					<div class="row">
-						<div class="large-6 columns">
-							<div class="panel">
-								You can search by product code, by available quantities or both.
-							</div>
-							<form>
-								<fieldset>
-									<input type="text" placeholder="Search by product code..." ng-model="xmlsearch.item_code">
-									<input type="number" placeholder="Search by quantity..." ng-model="xmlsearch.avail_qty" min="0">
-								</fieldset>
-							</form>
-							<div style="height:19em" ng-init="fetchXml('data/latest/latest_avail.xml', 'avail')">
-								<table style="position:absolute" ng-show="(filteredData = (xml.stock_avail.avail | filter:xmlsearch | limitTo:10)) && filteredData.length >= 1 && xmlsearch && xmlsearch.item_code.length >= 1">
-									<tr>
-										<td>Item code</td>
-										<td>Available qty</td>
-									</tr>
-									<div>									
-										<tr ng-repeat="item in filteredData">
-											<td>{{item.item_code}}</td>
-											<td>{{item.avail_qty}}</td>
-										</tr>
-									</div>
-								</table>
-							</div>
-						</div>
-						<div class="large-6 columns">
-							<div class="panel">
-								You can search by product code, by available quantities or both.
-							</div>
-							<form>
-								<fieldset>
-									<input type="text" placeholder="Search by product code..." ng-model="xmlsearch_items.item_code">
-									<input type="number" placeholder="Search by quantity..." ng-model="xmlsearch_items.avail_qty">
-								</fieldset>
-							</form>
-							<div ng-init="fetchXml('data/latest/latest_items.xml', 'items')">
-								<table ng-show="(itemsFiltered = (xmlitems.latest_all.item | filter:xmlsearch_items.item_code | limitTo:8)) && itemsFiltered.length >= 0 && xmlsearch_items && xmlsearch_items.item_code.length >= 1">
-									<tr>
-										<td>Item code</td>
-										<td>Description</td>
-										<td>Selling price</td>
-										<td>Quantity</td>				
-									</tr>
-									<tr ng-repeat="element in itemsFiltered">
-										<!-- <td>{{element}}</td> -->
-										<td>{{element.item_code}}</td>
-										<td>{{element.description}}</td>
-										<td>{{element.selling_price}}</td>
-										<td>{{element.amber_qty}}</td>
-									</tr>
-								</table>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
 			<hr>
 			<div class="row">
 				<div class="large-6 columns">

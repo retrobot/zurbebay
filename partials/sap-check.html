@@ -1,0 +1,60 @@
+			<div class="row">
+				<div class="large-12 columns" ng-controller="FourthCtrl">
+					<h3>Search available quantities</h3>
+					<div class="row">
+						<div class="large-6 columns">
+							<div class="panel">
+								You can search by product code, by available quantities or both.
+							</div>
+							<form>
+								<fieldset>
+									<input type="text" placeholder="Search by product code..." ng-model="xmlsearch.item_code">
+									<input type="number" placeholder="Search by quantity..." ng-model="xmlsearch.avail_qty" min="0">
+								</fieldset>
+							</form>
+							<div style="height:19em" ng-init="fetchXml('data/latest/latest_avail.xml', 'avail')">
+								<table style="position:absolute" ng-show="(filteredData = (xml.stock_avail.avail | filter:xmlsearch | limitTo:10)) && filteredData.length >= 1 && xmlsearch && xmlsearch.item_code.length >= 1">
+									<tr>
+										<td>Item code</td>
+										<td>Available qty</td>
+									</tr>
+									<div>									
+										<tr ng-repeat="item in filteredData">
+											<td>{{item.item_code}}</td>
+											<td>{{item.avail_qty}}</td>
+										</tr>
+									</div>
+								</table>
+							</div>
+						</div>
+						<div class="large-6 columns">
+							<div class="panel">
+								You can search by product code, by available quantities or both.
+							</div>
+							<form>
+								<fieldset>
+									<input type="text" placeholder="Search by product code..." ng-model="xmlsearch_items.item_code">
+									<input type="number" placeholder="Search by quantity..." ng-model="xmlsearch_items.avail_qty">
+								</fieldset>
+							</form>
+							<div ng-init="fetchXml('data/latest/latest_items.xml', 'items')">
+								<table ng-show="(itemsFiltered = (xmlitems.latest_all.item | filter:xmlsearch_items.item_code | limitTo:8)) && itemsFiltered.length >= 0 && xmlsearch_items && xmlsearch_items.item_code.length >= 1">
+									<tr>
+										<td>Item code</td>
+										<td>Description</td>
+										<td>Selling price</td>
+										<td>Quantity</td>				
+									</tr>
+									<tr ng-repeat="element in itemsFiltered">
+										<!-- <td>{{element}}</td> -->
+										<td>{{element.item_code}}</td>
+										<td>{{element.description}}</td>
+										<td>{{element.selling_price}}</td>
+										<td>{{element.amber_qty}}</td>
+									</tr>
+								</table>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
